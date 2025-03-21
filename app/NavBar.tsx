@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import SignIn from "./components/sign-in";
 const NavLinks = [
   { path: "/", name: "Home" },
   { path: "/admin", name: "Admin" },
@@ -14,6 +15,7 @@ const NavBar = () => {
           {item.name}
         </Link>
       ))}
+      <SignIn />
     </div>
   );
 };
